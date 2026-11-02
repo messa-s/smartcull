@@ -12,7 +12,7 @@ python backend.py -- --p "video.mp4" -ph "face1.jpg" "face2.jpg"
 python backend.py -- --p "video.mp4" -q "person wearing black"
 ```
 
-###Running gui
+### Running gui
 with dummy
 ```python
 $env:BACKEND="dummy.py"
@@ -24,7 +24,7 @@ Remove-Item Env:BACKEND
 flet run app.py
 ```
 
-###Testing cut
+### Testing cut
 ```python
 python models\backend.py -- --p "C:\videos\test.mp4" -q "person wearing black" -o results.json
 python models\cut.py --segments results.json -o clips\test
